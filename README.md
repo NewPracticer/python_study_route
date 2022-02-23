@@ -2,5 +2,11 @@
 python学习路径
 
 ### python 数据类型
-+ int 
-+ float 
++ Number
+    + int 
+    + float 
+    + boolean
++ 转义字符
++ 字符串 
++ 列表
++ 元组

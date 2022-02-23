@@ -45,3 +45,41 @@ if __name__ == "__main__" :
      hello world
      hello world
      ''');
+    ## 字符串运算
+    print("hello"+"world")
+    print("hello"*3)
+    print("hello world"[0])
+    print("hello world"[-1])
+    print("hello world"[6])
+    print("hello world"[-5])
+    print("hello world"[0:5])
+    print("hello world"[0:-1])
+    print("hello world"[0:-3])
+    print("hello world"[6:])
+    print("hello world python java c# javascript php ruby"[0:-4])
+    print("hello world python java c# javascript php ruby"[6:])
+    print("hello world python java c# javascript php ruby"[:-4])
+    ## 转义字符 r
+    print('hello \n world')
+    print('c:\northwind\northwest')
+    print('c:\\northwind\\northwest')
+    print(r'c:\northwind\northwest')
+    print(R'c:\northwind\northwest')
+    ## print(r'let's go'); 错误写法
+    ## 列表
+    print(type([1,2,3,4,5,6]))
+    print(type(["hello,world",1,2,3,4,5,6]))
+    print(type(["hello,world",1,2,3,4,5,6,True,False]))
+    print(["hello,world",1,2,3,4,5,6,True,False][0])
+    print(["hello,world",1,2,3,4,5,6,True,False][3])
+    print(["hello,world",1,2,3,4,5,6,True,False][0:2])
+    print(["hello,world",1,2,3,4,5,6,True,False][-1:])
+    print(["hello,world",1,2,3,4,5,6,True,False]+ ["点燃","虚弱"])
+    ## 元组
+    print((1,2,3,4,5))
+    print((1,2,3,4,5)[0])
+    print((1,2,3,4,5)[0:2])
+    print((1,2,3,4,5)* 3)
+    print(type((1,2,3,4,5)))
+    print(type((1)))
+
