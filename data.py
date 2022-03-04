@@ -34,6 +34,7 @@ if __name__ == "__main__" :
     print(bool([1,2,3]));
     print(bool([]));
     print(bool(None));
+
     # 字符串
     print('hello world')
     print("hello world")
@@ -45,6 +46,7 @@ if __name__ == "__main__" :
      hello world
      hello world
      ''');
+
     # 字符串运算
     print("hello"+"world")
     print("hello"*3)
@@ -59,6 +61,7 @@ if __name__ == "__main__" :
     print("hello world python java c# javascript php ruby"[0:-4])
     print("hello world python java c# javascript php ruby"[6:])
     print("hello world python java c# javascript php ruby"[:-4])
+
     ## 转义字符 r
     print('hello \n world')
     print('c:\northwind\northwest')
@@ -66,6 +69,7 @@ if __name__ == "__main__" :
     print(r'c:\northwind\northwest')
     print(R'c:\northwind\northwest')
     # print(r'let's go'); 错误写法
+
     # 列表
     print(type([1,2,3,4,5,6]))
     print(type(["hello,world",1,2,3,4,5,6]))
@@ -75,6 +79,7 @@ if __name__ == "__main__" :
     print(["hello,world",1,2,3,4,5,6,True,False][0:2])
     print(["hello,world",1,2,3,4,5,6,True,False][-1:])
     print(["hello,world",1,2,3,4,5,6,True,False]+ ["点燃","虚弱"])
+
     # 元组
     print((1,2,3,4,5))
     print((1,2,3,4,5)[0])
@@ -85,6 +90,7 @@ if __name__ == "__main__" :
     print(type((1,)))
     print(type(()))
     print(type([1]))
+
     # str list tuple 序列
     print("hello world"[2])
     print([1,2,3][2])
@@ -100,6 +106,7 @@ if __name__ == "__main__" :
     print(min([0,1,2,3,4,5,10]))
     print(min("abcde"))
     print(ord('w'))
+
     # Set 无序集合,没有重复元素
     print(type({1,1,2,2,3,4,5,6}))
     print(len({1,1,2,2,3,4,5,6}))
@@ -125,6 +132,7 @@ if __name__ == "__main__" :
     B = [1,2,3]
     skill = ['新月打击','苍白之瀑']
     print(A*3+B+skill)
+
     # int str tuple (不可改变)值类型  list set dict（可变） 引用类型
     # a =1 ;
     # b =a ;
@@ -140,6 +148,7 @@ if __name__ == "__main__" :
     print(a)
     e = (1,2,3,[4,5,6])
     print(e[3][1])
+
     # 算数运算符 - / // % **
     # 赋值运算符 = += *= /=  %= **= //=
     # 比较关系运算符 ==  != > <　＞＝　＜＝　  比较值是否相等
@@ -153,7 +162,26 @@ if __name__ == "__main__" :
     print(b in {"c":1})
     b = 'c'
     print(b in {"c":1})
+    g = {1,2,3}
+    h = {2,1,3}
+    print(g==h)
+    print(g is h)
+    i = (1,2,3)
+    j = (2,1,3)
+    print(i == j)
+    print(i in j)
+    k = 'hello'
+    print(type(k) == int)
+    print(type(k) == str)
+    print(isinstance(k,str))
+    print(isinstance(k,(int,str,float)))
+    # 对象的三个特征 id (is)  、 value（==）、type(isinstance)
 
+    ### 位运算符  & 按位与 |按位或 ^ 按位异或 ～按位取反 <<左移动 >>右移动   都是对二进制数进行运算
+
+    # 表达式是 运算符和操作数 所构成的序列
+
+    # python 运算符 优先级  （http://c.biancheng.net/view/2190.html）
 
 
 
