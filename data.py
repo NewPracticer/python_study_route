@@ -183,6 +183,6 @@ if __name__ == "__main__" :
 
     # python 运算符 优先级  （http://c.biancheng.net/view/2190.html）
 
-
+    # python 使用缩进来分隔代码和代码块 不像其他语言的()
 
 
