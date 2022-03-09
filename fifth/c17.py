@@ -1,43 +1,40 @@
-import c16
+from c16 import Human
 
-class Student(c16.people):
+# 可以多继承
+class Student(Human):
     
-    name = 'skyl'
-    age = 0
-    sum = 0
-    score = 0 
-    # 私有成员变量
-    __scr = 0
-    # 实例方法
-    def __init__(self,name,age):
-        # 构造函数
-        # 初始化对象的属性
-        self.name = name
-        self.age = age
-        # print(age)
-        # print(name)
-        self.__class__.sum +=1
-        print('当前班级学生总数为：'+str(self.__class__.sum))
+    # name = 'skyl'
+    # age = 0
+    # sum = 0
+    # score = 0 
+    # # 私有成员变量
+    # __scr = 0
+    # # 实例方法
+    # def __init__(self,name,age):
+    #     # 构造函数
+    #     # 初始化对象的属性
+    #     self.name = name
+    #     self.age = age
+    #     # print(age)
+    #     # print(name)
+    #     self.__class__.sum +=1
+    #     print('当前班级学生总数为：'+str(self.__class__.sum))
 
-    def print_file(self):
-        print('name: '+self.name)
-        print('age:  '+str(self.age))
+    def __init__(self,school,name,age):
+        self.school = school
+        # 调用父类构造函数
+        # Human.__init__(self,name, age)
+        super(Student,self).__init__(name, age)
 
-    #私有方法
-    def __print_file_private(self):
-        print('name: '+self.name)
-        print('age:  '+str(self.age))
+    def do_homework(self):
+        super(Student, self).do_homework()
+        print('english homework')
 
-    #类方法
-    @classmethod
-    def plus_sum(cls):
-        cls.sum +=1 
-        print(cls.sum)
 
-    @staticmethod
-    def add(x,y):
-        print('This is a static method')
 
-    def marking(self,score):
-        self.score = score;
-        print(self.name)
+student1 = Student('上海小学','不敢当',18)
+# print(student1.sum)
+print(student1.name)
+print(student1.age)
+# print(Student.sum)
+print(student1.do_homework())
