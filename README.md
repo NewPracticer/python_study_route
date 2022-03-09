@@ -45,6 +45,13 @@ python学习路径
     +  检测一个字符串是否符合email
     +  把一个文本里指定的单词替换为另外一个单词
 + [元字符](https://www.ibm.com/docs/zh/rational-clearquest/9.0.0?topic=tags-meta-characters-in-regular-expressions)
++ JSON 
+    + JSON是一种轻量级的数据交换格式
+    + 符合JSON格式的字符串叫做JSON字符串
+    + 优势
+        + 易于阅读
+        + 易于解析
+        + 网络传输效率高
 
 
 
