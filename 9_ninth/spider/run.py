@@ -8,6 +8,7 @@ from spider import Spider
 
 def go():
     spider = Spider(Page_URL, ANALYSER)
+    
     spider.go()
     print(str(datetime.datetime.now())+'------------------------------------------------')
     time.sleep(60)

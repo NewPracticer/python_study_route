@@ -17,7 +17,7 @@ class Spider():
         
     def __analysis(self, htmls):
         # analyser= getattr(analyser, self.analyser) 
-        analyser = CategoryFactory.get_category(self.analyser)
+        # analyser = CategoryFactory.get_category(self.analyser)
         analyser.analysis(htmls)  
         
     def go(self):

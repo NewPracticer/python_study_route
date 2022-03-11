@@ -1,5 +1,6 @@
 from urllib import request
 # 找到最近具有唯一标识性的标签 作为定位标签
+# 找到闭合标签的父标签
 class Spider(object):
     url = 'https://www.huya.com/g/lol'
 
